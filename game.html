@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock Paper Scissors</title>
+    <!--======BOOSTRAP 4 CDN=======-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!--======BOOSTRAP POPPER, JAVASCRIPT POPPER, JQUERY======-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!--=====font awesome=======-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100|Titillium+Web&display=swap" rel="stylesheet">
+    <!---======CSS======-->
+    <link rel="stylesheet" href="game.css">
+</head>
+
+<body>
+    <!--======THE SPLASH SCREEN========-->
+    <div class="container" id="splash">
+        <br>
+        <div class="splashScreen">
+            <img src="myImages/splash.jpeg" class="splashPic img-fluid">
+        </div>
+        <div class="menu mt-2">
+            <br>
+            <div class="text">
+                <h3>Do you have what it takes to beat a <span class="bg-danger">COMPUTER</span> in <span class="bg-danger">RPS</span></h3>
+            </div>
+            <div class="buttons justify-content-center mx-auto">
+                <center>
+                    <button class="btn btn-warning btn-lg justify-content-center col-md-6 my-2" onclick="PlayGame()">Play  Game</button>
+                    <button class="btn btn-success btn-lg justify-content-center col-md-6 my-2">High Score</button>
+                    <button class="btn btn-danger btn-lg justify-content-center col-md-6 my-2" onclick="Instructions()">Instructions</button>
+                </center>
+            </div>
+        </div>
+    </div>
+    <!--=======THE PLAYMODE==========-->
+    <div class="container" id="playMode">
+        <br>
+        <button class="btn btn-warning">Start Game</button>
+        <center>
+            <div class="playMode">
+                <h2 class="text-center">Score</h2>
+                <div class="score playerScore col-5 bg-success text-center">
+                    <h4>Player</h4>
+                    <h1 id="playerScore">0</h1>
+                    <img src="myImages/paper.png" class="playerImg img-fluid" id="imagePlayer">
+                </div>
+                <div class="score computerScore col-5 bg-success text-center">
+                    <h4>Computer</h4>
+                    <h1 id="compScore">0</h1>
+                    <img src="myImages/paper.png" alt="scissors" class="img-fluid" id="imageComp">
+                </div>
+            </div>
+            <br>
+            <h3 class="scoreBoard">Tracking whose Winning</h3>
+            <br>
+            <div class="choose">
+                <h2>Choose An Option</h2>
+                <button class="btn btn-danger optionBtn" name="rock">rock</button>
+                <button class="btn btn-danger optionBtn" name="paper">paper</button>
+                <button class="btn btn-danger optionBtn" name="scissors">scissors</button>
+            </div>
+        </center>
+    </div>
+    <br>
+
+    <!--=======HIGH SCORE BOARD=======-->
+    <div class="board" id="HSboard">
+
+    </div>
+
+    <!--========THE INSTRUCTIONS===========-->
+    <div class="instructions" id="Instructions">
+        <center>
+            <div class="container">
+                <img src="myImages/instructions.jpg" class="img-fluid">
+            </div>
+        </center>
+        <br>
+    </div>
+
+    <!--=====THE FOOTER========-->
+    <footer class="bg-dark m-0 p-0">
+        <div class="copy bg-dark text-white text-center p-3 m-0">
+            &copy;2019 BDI ROCK PAPER SCISSORS GAME
+        </div>
+    </footer>
+
+    <script src="game.js"></script>
+</body>
+
+</html>

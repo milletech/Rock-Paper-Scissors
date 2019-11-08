@@ -1,0 +1,65 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: rgb(77, 210, 255);
+}
+
+body {
+    background-color: rgb(77, 210, 255)!important;
+    margin: 0px !important;
+}
+
+.text {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    background-color: #f4f4f4!important;
+}
+
+.bg-danger {
+    padding: 5px;
+    border-radius: 5px;
+    color: #f4f4f4;
+}
+
+;
+.buttons {
+    display: inline-block;
+}
+
+.score {
+    display: inline-block;
+}
+
+#imagePlayer {
+    transform: scaleX(-1);
+}
+
+
+/*==PLAYMODE==*/
+
+#playMode {
+    display: none;
+}
+
+
+/*==Instructions===*/
+
+#Instructions {
+    display: none;
+}
+
+footer {
+    bottom: 0px;
+    width: 100%;
+    top: 100%;
+}
+
+.myScore {
+    font-size: 22px;
+    background-color: #f4f4f4;
+    text-align: center;
+    width: 40px;
+    margin-bottom: 5px;
+}
